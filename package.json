@@ -7,7 +7,7 @@
     "build": "webpack --config webpack.config.js",
     "test": "jest",
     "lint": "eslint src/**/*.js",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
