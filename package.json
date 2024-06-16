@@ -1,14 +1,21 @@
 {
   "name": "test-package",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple JavaScript library",
+  "main": "dist/my-test-package.js",
   "scripts": {
-    "test": "jest"
+    "build": "webpack --config webpack.config.js",
+    "test": "jest",
+    "lint": "eslint src/**/*.js",
+    "prepublishOnly": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushilthapa98/testpackage"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Sushil Thapa",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
